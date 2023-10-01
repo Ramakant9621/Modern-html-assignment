@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features Showcase</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+        header, main, footer {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 Features Showcase</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Semantic Elements</h2>
+            <p>HTML5 introduces semantic elements that provide a more meaningful structure to web documents.</p>
+            <article>
+                <h3>Article 1</h3>
+                <p>This is the content of article 1.</p>
+            </article>
+            <article>
+                <h3>Article 2</h3>
+                <p>This is the content of article 2.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Audio/Video Support</h2>
+            <p>HTML5 includes native support for embedding audio and video content without third-party plugins.</p>
+            <audio controls>
+                <source src="example.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+            <br>
+            <video width="400" controls>
+                <source src="example.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Canvas Element</h2>
+            <p>The <code>&lt;canvas&gt;</code> element allows dynamic drawing of graphics and visual elements using JavaScript.</p>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var context = canvas.getContext("2d");
+                context.fillStyle = "#FF0000";
+                context.fillRect(0, 0, 200, 100);
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML5 Showcase</p>
+    </footer>
+
+</body>
+</html>
